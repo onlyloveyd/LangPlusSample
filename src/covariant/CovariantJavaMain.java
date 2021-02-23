@@ -41,9 +41,9 @@ public class CovariantJavaMain {
             add(new Dog());
         }};
         Animal animal = objList.get(0);//编译通过
-        Dog dog = objList.get(0);      //编译报错
-        objList.add(new Animal());     //编译报错
-        objList.add(new Dog());        //编译报错
+//        Dog dog = objList.get(0);      //编译报错
+//        objList.add(new Animal());     //编译报错
+//        objList.add(new Dog());        //编译报错
     }
 
     // covariant contravariant  invariant
@@ -53,10 +53,10 @@ public class CovariantJavaMain {
             add(new Animal());
             add(new Animal());
         }};
-        Animal animal = objList.get(0);     // 编译报错
-        Dog dog = objList.get(0);           // 编译报错
-        Object object = objList.get(0);     // 编译正常
-        objList.add(new Animal());     //编译报错
+//        Animal animal = objList.get(0);     // 编译报错
+//        Dog dog = objList.get(0);           // 编译报错
+//        Object object = objList.get(0);     // 编译正常
+//        objList.add(new Animal());     //编译报错
         objList.add(new Dog());        //编译通过
     }
 
